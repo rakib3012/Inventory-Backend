@@ -1,4 +1,4 @@
-from endpoints import auth,customers,dashboard,invoice,users,produts,categories,invoice_item
+from api.v1.endpoints import auth,customers,dashboard,invoice,users,produts,categories,invoice_item
 from fastapi import APIRouter
 
 

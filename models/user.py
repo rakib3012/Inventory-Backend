@@ -17,7 +17,7 @@ class User(Base):
     updated_at = Column(TIMESTAMP, nullable=False, default=lambda:datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
 
     # relationship
-    category = relationship("Category", back_populates="user")
-    prosuct = relationship("Product", back_populates="user")
-    invoice = relationship("Invoice", back_populates="user")
-    invoice_product = relationship("Invoice_Proudcts", back_populates="user")
+    category = relationship("Category", back_populates="users")
+    product = relationship("Product", back_populates="users")
+    invoice = relationship("Invoice", back_populates="users")
+    invoice_product = relationship("Invoice_Proudcts", back_populates="users")
